@@ -1,9 +1,15 @@
-
 import './App.css';
+import Herramientas from './Componentes/Herramientas';
 
 function App() {
   return (
-    <h1>Buen día, mundo</h1>
+    
+    <div className="App">
+        <div className='Definicion'>
+        <h1>Definiciones oficiales</h1>
+        </div>
+    <Herramientas/>
+    </div>
   );
 }
 
