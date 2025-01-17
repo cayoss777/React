@@ -1,15 +1,15 @@
 import React from "react";
 
-function Herramientas(){
+function Herramientas(props){
     return(
         <div className="herramienta">
             <img className="foto"
-            src={require("../fotos/react1.png")}
+            src={require(`../fotos/${props.foto}.png`)}
             alt="foto react"/>
             <div className="texto">
-                <p className="texto-arriba">HTML</p>
-                <p className="texto-abajo">HTML is the standard markup language for Web pages.</p>
-                <p className="texto-bajo">With HTML you can create your own Website.</p>
+                <p className="texto-arriba">{props.titulo}</p>
+                <p className="texto-abajo">{props.subtitulo}</p>
+                <p className="texto-bajo">{props.definicion}</p>
             </div>
         </div>
         
